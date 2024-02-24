@@ -31,6 +31,7 @@ namespace VelocidroneQoL
             {
                 Camera.fpvFieldOfView += 2;
                 Camera.setFpvFOVMinus();
+
             }
         }
     }
