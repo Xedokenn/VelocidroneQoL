@@ -29,7 +29,8 @@ namespace VelocidroneQoL
             //hffkblekiic
             if (Input.GetKeyUp(KeyCode.LeftBracket))
             {
-                Camera.fpvFieldOfView += 1;
+                Camera.fpvFieldOfView += 2;
+                Camera.setFpvFOVMinus();
             }
         }
     }
