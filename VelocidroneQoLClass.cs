@@ -16,21 +16,24 @@ namespace VelocidroneQoL
 {
     public class VelocidroneQoLClass : MelonMod
     {
-        //CAMERA CONTROL CameraContoller.fpvFieldOfView
+        // Print Scene and index
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
             LoggerInstance.Msg($"Scene {sceneName} with build index {buildIndex} has been loaded!");
         }
 
 
+        //CAMERA CONTROL Camera.fpvFieldOfView
         public override void OnUpdate()
         {
             CameraContoller Camera = GameObject.Find("Camera").GetComponent<CameraContoller>();
-            //hffkblekiic
             if (Input.GetKeyUp(KeyCode.LeftBracket))
             {
                 Camera.fpvFieldOfView += 1;
             }
+
+
+            // On join session turn on stick movement osd
         }
     }
 }
