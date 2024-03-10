@@ -10,8 +10,6 @@ using System.Security.Cryptography.X509Certificates;
 using System.Reflection;
 using VelocidroneQoL;
 
-
-
 namespace VelocidroneQoL
 {
     public class VelocidroneQoLClass : MelonMod
@@ -29,7 +27,8 @@ namespace VelocidroneQoL
             CameraContoller Camera = GameObject.Find("Camera").GetComponent<CameraContoller>();
             if (Input.GetKeyUp(KeyCode.LeftBracket))
             {
-                Camera.fpvFieldOfView += 1;
+                Camera.fpvFieldOfView += 2;
+                Camera.setFpvFOVMinus();
             }
 
 
