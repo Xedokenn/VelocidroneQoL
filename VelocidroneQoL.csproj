@@ -41,6 +41,9 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>E:\Velocidrone Windows Launcher\app\velocidrone_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="ConsoleTitleHider">
+      <HintPath>E:\Velocidrone Windows Launcher\app\Mods\ConsoleTitleHider.dll</HintPath>
+    </Reference>
     <Reference Include="MelonLoader, Version=0.6.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>E:\Velocidrone Windows Launcher\app\MelonLoader\MelonLoader.dll</HintPath>

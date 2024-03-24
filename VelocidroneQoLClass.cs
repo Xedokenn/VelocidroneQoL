@@ -10,6 +10,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Reflection;
 using VelocidroneQoL;
 
+
 namespace VelocidroneQoL
 {
     public class VelocidroneQoLClass : MelonMod
@@ -33,6 +34,16 @@ namespace VelocidroneQoL
 
 
             // On join session turn on stick movement osd
+
+
+
+
+
+
+
+            // Discord Rich Presence 
+
+
         }
     }
 }
