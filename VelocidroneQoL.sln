@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelocidroneQoL", "VelocidroneQoL.csproj", "{95978CC2-8322-47E4-9296-09CAB4014A0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoaderDiscordStatus", "..\..\..\..\Desktop\MelonLoaderDiscordStatus-main\MelonLoaderDiscordStatus.csproj", "{28766948-6DA4-437C-9CE8-F2E73D452D41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{95978CC2-8322-47E4-9296-09CAB4014A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95978CC2-8322-47E4-9296-09CAB4014A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95978CC2-8322-47E4-9296-09CAB4014A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28766948-6DA4-437C-9CE8-F2E73D452D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28766948-6DA4-437C-9CE8-F2E73D452D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28766948-6DA4-437C-9CE8-F2E73D452D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28766948-6DA4-437C-9CE8-F2E73D452D41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

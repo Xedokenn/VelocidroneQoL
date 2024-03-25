@@ -30,9 +30,6 @@ namespace VelocidroneQoL
                 Camera.fpvFieldOfView += 2;
                 Camera.setFpvFOVMinus();
             }
-
-
-            // On join session turn on stick movement osd
         }
     }
 }
