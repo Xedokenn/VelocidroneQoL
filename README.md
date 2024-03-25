@@ -51,6 +51,11 @@ To hide the CMD window, you need to create a shortcut of the SpiderHeck .exe, th
 ![image](https://github.com/Xedokenn/VelocidroneQoL/assets/61141323/a66c6624-5103-4769-8bcb-2d9ab2da7727)
 
 
+# Hiding the Command Window
+To hide the CMD window, you need to create a shortcut of the Velocidrone.exe, then right click and goto properties. And click on the "Target" textbox goto the end of the text box there will be a double quote, outside of the double quotes add '--melonloader.hideconsole' then click apply
+
+![image](https://github.com/Xedokenn/VelocidroneQoL/assets/61141323/38af0dc0-1965-4a28-90b7-4fd4afc6b577)
+
 
 # THAT IT
 Now launch your game, dont mind melon loader console poping out before and you can change your fov without any limits, just use left and right square bracket to change fov
