@@ -3,9 +3,6 @@ using System;
 using Discord;
 using System.Threading;
 
-[assembly: MelonInfo(typeof(DiscordStatus.DiscordStatusPlugin), "Discord Status", "1.0.0", "SlidyDev")]
-[assembly: MelonColor(ConsoleColor.DarkCyan)]
-
 namespace DiscordStatus
 {
     public class DiscordStatusPlugin : MelonPlugin
@@ -95,6 +92,7 @@ namespace DiscordStatus
 
             if (GameStarted)
                 activity.Timestamps.Start = gameStartedTime;
+
 
             activityManager.UpdateActivity(activity, ResultHandler);
         }

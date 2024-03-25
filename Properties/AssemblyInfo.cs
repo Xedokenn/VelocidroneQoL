@@ -3,10 +3,13 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using VelocidroneQoL;
 using MelonLoader;
+using System;
 
 
 [assembly: MelonInfo(typeof(VelocidroneQoLClass), "VelocidroneQoL", "1.0.0", "Xedoken")]
 [assembly: MelonGame("velocidrone", "velocidrone")]
+
+[assembly: MelonColor(ConsoleColor.DarkCyan)]
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information

@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>obj\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -66,8 +66,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiscordLibraryLoader.cs" />
+    <Compile Include="DiscordSDK\ActivityManager.cs" />
+    <Compile Include="DiscordSDK\Constants.cs" />
+    <Compile Include="DiscordSDK\Core.cs" />
+    <Compile Include="DiscordSDK\ImageManager.cs" />
+    <Compile Include="DiscordSDK\LobbyManager.cs" />
+    <Compile Include="DiscordSDK\StorageManager.cs" />
+    <Compile Include="DiscordSDK\StoreManager.cs" />
+    <Compile Include="DiscordStatusPlugin.cs" />
     <Compile Include="VelocidroneQoLClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencies\x86_64\discord_game_sdk64.dll" />
+    <Content Include="ReferencedAssemblies\MelonLoader.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dependencies\x86\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
