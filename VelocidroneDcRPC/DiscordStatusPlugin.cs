@@ -86,8 +86,8 @@ namespace DiscordStatus
                 Details = $"Playing 098098098 {MelonUtils.CurrentGameAttribute.Name}" //2nd line (fist without bold)
             };
 
-            activity.Assets.LargeImage = $"{ImageType.User}"; // big picture
-            activity.Assets.SmallImage = $"{ImageType.User}"; // small picture
+            activity.Assets.LargeImage = $"ml_icon"; // big picture
+            activity.Assets.SmallImage = $"ml_icon"; // small picture
 
             activity.Assets.LargeText = $"Big picture text"; //big picture text
             activity.Assets.SmallText = $"small picture text"; // small picture text
