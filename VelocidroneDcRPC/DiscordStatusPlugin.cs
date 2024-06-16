@@ -83,16 +83,14 @@ namespace DiscordStatus
         {
             var activity = new Activity
             {
-                Details = $"Playing 098098098 {MelonUtils.CurrentGameAttribute.Name}" //2nd line (fist without bold)
+                Details = $"Playing {MelonUtils.CurrentGameAttribute.Name}" //2nd line (fist without bold)
             };
 
             activity.Assets.LargeImage = $"ml_icon"; // big picture
             activity.Assets.SmallImage = $"ml_icon"; // small picture
+            activity.Assets.LargeText = $"{MelonUtils.CurrentGameAttribute.Name}"; //big picture text
+            activity.Assets.SmallText = $"{MelonUtils.CurrentGameAttribute.Developer}"; // small picture text
 
-            activity.Assets.LargeText = $"Big picture text"; //big picture text
-            activity.Assets.SmallText = $"small picture text"; // small picture text
-
-            
             activity.Name = $"{MelonUtils.CurrentGameAttribute.Name} 123123123 {BuildInfo.Version}";
             activity.Instance = true;
             
@@ -101,11 +99,6 @@ namespace DiscordStatus
             activity.State = GameStarted ? $"{modsCount} {(modsCount == 1 ? "Mod" : "Mods")} Loaded" : "Loading MelonLoader"; //3rd line
 
             activity.Assets.LargeText = $"{ActivityType.Playing}";
-
-
-
-
-
 
 
             if (GameStarted)

@@ -14,12 +14,11 @@ namespace VelocidroneQoL
 {
     public class VelocidroneQoLClass : MelonMod
     {
-        // Print Scene and index
-        public override void OnSceneWasLoaded(int buildIndex, string sceneName)
+        // Print Scene and index on every scene change
+        public override void OnSceneWasLoaded(int buildIndex, string trackName)
         {
-            LoggerInstance.Msg($"Scene {sceneName} with build index {buildIndex} has been loaded!");
+            LoggerInstance.Msg($"Scene {trackName} with build index {buildIndex}  has been loaded!");
         }
-
 
         //CAMERA CONTROL Camera.fpvFieldOfView
         public override void OnUpdate()
@@ -31,6 +30,11 @@ namespace VelocidroneQoL
                 Camera.setFpvFOVMinus();
             }
         }
+
+        //HUD CONTROL 
+
+        //Turn on gimbal hud whenever you join map
+
     }
 }
 
