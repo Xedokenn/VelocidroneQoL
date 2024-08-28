@@ -9,32 +9,47 @@ using HarmonyLib;
 using System.Security.Cryptography.X509Certificates;
 using System.Reflection;
 using VelocidroneQoL;
+using RLD;
+using MelonLoader;
+using DiscordRPC;
+using DiscordRPC.Logging;
 
 namespace VelocidroneQoL
 {
     public class VelocidroneQoLClass : MelonMod
     {
-        // Print Scene and index on every scene change
-        public override void OnSceneWasLoaded(int buildIndex, string trackName)
+        private DiscordRpcClient client;
+
+        public override void OnApplicationStart()
         {
-            LoggerInstance.Msg($"Scene {trackName} with build index {buildIndex}  has been loaded!");
+            client = new DiscordRpcClient("1113807408750415872");
+
+            client.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
+
+            client.Initialize();
+
+            client.SetPresence(new RichPresence()
+            {
+                Details = "Playing My Game",
+                State = "In the main menu",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "cat",
+                    LargeImageText = "Large Image",
+                    SmallImageKey = "clown",
+                    SmallImageText = "Small Image"
+                }
+            });
         }
 
-        //CAMERA CONTROL Camera.fpvFieldOfView
         public override void OnUpdate()
         {
-            CameraContoller Camera = GameObject.Find("Camera").GetComponent<CameraContoller>();
-            if (Input.GetKeyUp(KeyCode.LeftBracket))
-            {
-                Camera.fpvFieldOfView += 2;
-                Camera.setFpvFOVMinus();
-            }
+            client.Invoke();
         }
 
-        //HUD CONTROL 
-
-        //Turn on gimbal hud whenever you join map
-
+        public override void OnApplicationQuit()
+        {
+            client.Dispose();
+        }
     }
 }
-
